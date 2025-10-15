@@ -1,0 +1,29 @@
+diffusion_sampler:
+  run_dir: "trained_models/imgnet"
+  image_shape: [128, 128, 3]
+  num_steps: 3000
+  num_samples_to_take: 300
+  sampling_window: [0, 3000]
+  initial_step: 0 
+  batch_size: 16
+  selection_strategy: block
+  sigma: 10
+  data_domain: image
+  hard_consistency: false
+  initial_measurement: false
+  guidance_method: dps
+  guidance_kwargs:
+    omega: 1
+  plotting_interval: 100
+
+h_model:
+  run_dir: "trained_models/testem"
+  init_run_dir: "trained_models/h_trans_init"
+
+
+  batch_design:
+    num_samples: 2
+    omega_multiplier: 1
+    lamda: 0.0001
+    learning_rate: 5000
+    num_gradient_steps: 100

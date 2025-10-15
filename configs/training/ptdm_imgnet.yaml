@@ -1,0 +1,56 @@
+seed: 42
+data:
+  image_shape: [128, 128, 3]
+  n_frames: 1
+  dataset_repetitions: 1
+  batch_size: 64
+  train_folder: "imgnet/train"
+  val_folder: "imgnet/val"
+  num_img: null
+  extension: "png"
+  hdf5_key: "data/image"
+  range: [0, 255]
+  normalization: [-1, 1]
+  resize_type: "resize"
+  local: null
+
+diffusion_model_run_dir:
+  "trained_models/imgnet"
+
+h_model_run_dir:
+  "trained_models/testem"
+
+evaluation:
+  batch_size: 8
+  diffusion_steps: 60
+  kid:
+    image_shape: [128, 128, 3]
+    diffusion_steps: 5
+    enable: false
+
+sampling:
+  min_signal_rate: 0.01
+  max_signal_rate: 0.98
+
+
+model:
+  embedding_dims: 128
+  embedding_max_frequency: 1000.0
+  widths: [32, 64, 128]
+  #widths: [32, 64, 128]
+  block_depth: 1
+  diffusion_steps: 200
+  run_eagerly: false
+  latent: false
+  autoencoder_checkpoint_directory: null
+
+optimization:
+  num_epochs: 101
+  ema: 0.9
+  learning_rate: 0.001
+  weight_decay: 0.001
+  loss: "mae"
+
+device: "auto:1"
+hide_devices: null
+ml_library: "tensorflow"
