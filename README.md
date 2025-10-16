@@ -1,3 +1,16 @@
+# EM-PTDM: Expectation Maximized Permanent Tempo- rary Diffusion Memory
+Implementation of _Active Target Discovery under Uninformative Priors: The Power of Permanent and Transient Memory_.
+
+<div align="center">
+
+[Anindya Sarkar*](https://scholar.google.co.in/citations?user=2hQyYz0AAAAJ&hl=en),
+[Binglin Ji*](https://keving396.github.io/kevinji.github.io//),
+[Yevgeniy Vorobeychik](https://vorobeychik.com/)
+  
+<img src="imgs/fig1.pdf" width="700">
+</div>
+
+
 ## Installation
 Install required Tensorflow, JAX and Keras version:
 ```bash
