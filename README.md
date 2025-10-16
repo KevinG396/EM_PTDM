@@ -14,7 +14,7 @@ This repository is the official implementation of the **NeurIPS 2025 paper** _Ac
 
 <div style="display: flex; justify-content: center;">
   <img src="imgs/fig6_.png" width="380">
-  <img src="imgs/update_memory_5.png" width="280">
+  <img src="imgs/update_memory_5.png" width="290">
 </div>
 
 
