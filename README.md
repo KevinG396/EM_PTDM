@@ -13,7 +13,7 @@ Implementation of _Active Target Discovery under Uninformative Priors: The Power
 This repository is the official implementation of the **NeurIPS 2025 paper** _Active Target Discovery under Uninformative Priors: The Power of Permanent and Transient Memory_. Drawing inspiration from neuroscience, in this work, we introduce Expectation Maximized Permanent Temporary Diffusion Memory (EM-PTDM), a novel approach that enables effective active target discovery even in settings with uninformative priors, ensuring robust exploration and adaptability in complex real-world scenarios.
 
 <div align="center">
-<img src="imgs/fig6_.png" width="700">
+<img src="imgs/fig6_.png" width="400">
 </div>
 
 
