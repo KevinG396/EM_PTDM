@@ -7,7 +7,7 @@ Implementation of _Active Target Discovery under Uninformative Priors: The Power
 [Binglin Ji*](https://keving396.github.io/kevinji.github.io//),
 [Yevgeniy Vorobeychik](https://vorobeychik.com/)
   
-<img src="imgs/fig1_intro.png" width="800">
+<img src="imgs/Arch_fig-1.png" width="800">
 </div>
 
 This repository is the official implementation of the **NeurIPS 2025 paper** _Active Target Discovery under Uninformative Priors: The Power of Permanent and Transient Memory_. Drawing inspiration from neuroscience, in this work, we introduce Expectation Maximized Permanent Temporary Diffusion Memory (EM-PTDM), a novel approach that enables effective active target discovery even in settings with uninformative priors, ensuring robust exploration and adaptability in complex real-world scenarios.
@@ -27,6 +27,11 @@ pip install wandb albumentations pillow matplotlib
 * Train your own diffusion model using `python train_ddim.py --config=/path/to/config --data_root=/path/to/data/root --run_dir=/path/to/save/model/`.
 * For example, train on ImageNet using `train_ddim.py --config=configs/training/ddim_train_imagenet.yaml --data_root=data/ --run_dir=trained_models/`, config your data in .yaml file
 
+## An Overview of EM-PTDM
+
+<div align="center">
+<img src="imgs/fig1-1.png" width="700">
+</div>
 
 ## Inference EM-PTDM
 * First, train the prior as we described in the last step.
