@@ -7,7 +7,7 @@ Implementation of _Active Target Discovery under Uninformative Priors: The Power
 [Binglin Ji*](https://keving396.github.io/kevinji.github.io//),
 [Yevgeniy Vorobeychik](https://vorobeychik.com/)
   
-<img src="imgs/Arch_fig-1.png" width="530">
+<img src="imgs/fig1-1.png" width="530">
 </div>
 
 This repository is the official implementation of the **NeurIPS 2025 paper** _Active Target Discovery under Uninformative Priors: The Power of Permanent and Transient Memory_. Drawing inspiration from neuroscience, in this work, we introduce Expectation Maximized Permanent Temporary Diffusion Memory (EM-PTDM), a novel approach that enables effective active target discovery even in settings with uninformative priors, ensuring robust exploration and adaptability in complex real-world scenarios.
@@ -29,10 +29,10 @@ pip install --upgrade keras-cv
 pip install wandb albumentations pillow matplotlib
 ```
 
-## An Overview of EM-PTDM
+## The Architecture of EM-PTDM
 
 <div align="center">
-<img src="imgs/fig1-1.png" width="700">
+<img src="imgs/Arch_fig-1.png" width="700">
 </div>
 
 ## Train a Pre-trained Diffusion Model (Prior)
