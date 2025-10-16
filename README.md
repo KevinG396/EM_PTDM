@@ -20,8 +20,8 @@ pip install wandb albumentations pillow matplotlib
 ```bash
 KERAS_BACKEND="jax" python inference_EM_PTDM.py --config=/path/to/inference/config --data_root=/path/to/data/root --target_img /path/to/target/img --mask_img /path/to/target/mask_img --train_h_model_config=/path/to/h_model/training/config`
 ```
-
-e.g. ```bash 
+e.g. An example of active target discovery on a sample from DOTA using ImageNet prior:
+```bash 
 KERAS_BACKEND="jax" python inference_EM_PTDM.py --config=configs/inference/EM_PTDM_imgnet.yaml --data_root=data --target_img sample_images/9036.png --mask_img sample_images/9036_mask.png --train_h_model_config=configs/training/ptdm_imgnet.yaml 
 ```
 * During sampling, the fine-tuned h-model will be saved in `testem` folder, don't remove any files.
