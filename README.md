@@ -7,7 +7,7 @@ Implementation of _Active Target Discovery under Uninformative Priors: The Power
 [Binglin Ji*](https://keving396.github.io/kevinji.github.io//),
 [Yevgeniy Vorobeychik](https://vorobeychik.com/)
   
-<img src="imgs/fig1-1.png" width="670">
+<img src="imgs/fig1-1.png" width="680">
 </div>
 
 
